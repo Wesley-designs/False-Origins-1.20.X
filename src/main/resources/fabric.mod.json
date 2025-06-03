@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "false-origins",
+	"version": "${version}",
+	"name": "False Origins",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Calculatormanz"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/falseorigins/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.wesley.falseorigins.FalseOrigins"
+		],
+		"client": [
+			"net.wesley.falseorigins.FalseOriginsClient"
+		],
+		"fabric-datagen": [
+			"net.wesley.falseorigins.FalseOriginsDataGenerator"
+		]
+	},
+	"mixins": [
+		"false-origins.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"geckolib": ">=4.4",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
